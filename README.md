@@ -15,7 +15,7 @@ Copyright (c) 2017-2020 WOA-Project
 Copyright (c) 2012-2019 Qualcomm Incorporated
 
 
-This repository contains binary files, most of which are not made by us and were found on an engineering board firmware that leaked in 2017 for arm64, as for the rest they come from publicly available firmware files from Software Repository. Some drivers, services, apps and all INF files were made by the WOA-Project team. As some mistakes may exist, we cannot provide warranty of any kind. 
+This repository contains binary files, most of which are not made by us and were found on SDM850 laptops,  
 
 - By installing this driver pack, you agree that any damage done to your phone or any loss of data is your entire responsibility and we cannot be taken responsible for data loss if it ever happens. We believe however this driver pack is safe to install. Try at your own risk!
 
@@ -34,6 +34,10 @@ We would like to thank the following people that helped:
 - gus33000
 
 - imbushuo
+
+- strongtz
+
+- TAO_Croatia, wetdreams
 
 - Our testers, you know who you are :)
 
