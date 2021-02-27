@@ -1,0 +1,91 @@
+;
+; ANXUcmCxCD.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System ; TODO: edit Class
+ClassGuid={4D36E97D-E325-11CE-BFC1-08002BE10318} ; TODO: edit ClassGuid
+Provider=%ManufacturerName%
+CatalogFile=ANXUcmCxCD.cat
+DriverVer = 07/11/2018,1.3.3.8
+PnpLockdown = 1
+
+;[DestinationDirs]
+;DefaultDestDir = 12
+
+; ================= Class section =====================
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+;[SourceDisksFiles]
+;ANXUcmCxCD.sys  = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%ManufacturerName%=Analogix,NTARM64
+
+[Analogix.NTARM64]
+%ANXUcmCxCD.DeviceDesc%=ANXUcmCxCD_Device, ACPI\ANX7447 ; TODO: edit hw-id
+%ANXUcmCxCD.DeviceDesc%=ANXUcmCxCD_Device, ACPI\ANX7411 ;LBT-421
+
+[ANXUcmCxCD_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+ANXUcmCxCD.sys
+
+;-------------- Service installation
+[ANXUcmCxCD_Device.NT.Services]
+AddService = ANXUcmCxCD,%SPSVCINST_ASSOCSERVICE%, ANXUcmCxCD_Service_Inst
+
+; -------------- ANXUcmCxCD driver install sections
+[ANXUcmCxCD_Service_Inst]
+DisplayName    = %ANXUcmCxCD.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\ANXUcmCxCD.sys
+
+;
+;--- ANXUcmCxCD_Device Coinstaller installation ------
+;
+
+[DestinationDirs]
+ANXUcmCxCD_Device_CoInstaller_CopyFiles = 11
+;Drivers_Dir = 13 ;Fixed JITA LBT-343
+DefaultDestDir = 12
+
+[ANXUcmCxCD_Device.NT.CoInstallers]
+AddReg=ANXUcmCxCD_Device_CoInstaller_AddReg
+CopyFiles=ANXUcmCxCD_Device_CoInstaller_CopyFiles
+
+[ANXUcmCxCD_Device_CoInstaller_AddReg]
+;
+
+
+[ANXUcmCxCD_Device_CoInstaller_CopyFiles]
+;
+
+
+[SourceDisksFiles]
+;
+
+ANXUcmCxCD.sys  = 1,,
+
+[ANXUcmCxCD_Device.NT.Wdf]
+KmdfService =  ANXUcmCxCD, ANXUcmCxCD_wdfsect
+[ANXUcmCxCD_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ManufacturerName="Analogix Semiconductor Inc." ;TODO: Replace with your manufacturer name
+ClassName="System" ; TODO: edit ClassName
+DiskName = "ANXUcmCxCD Installation Disk"
+ANXUcmCxCD.DeviceDesc = "ANX TypeC"
+ANXUcmCxCD.SVCDESC = "Liberty Service"
