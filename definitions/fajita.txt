@@ -1,0 +1,2 @@
+\components\SDM845\Platform
+\components\AnySoC\Touchscreen\SynapticsTouch_F12
