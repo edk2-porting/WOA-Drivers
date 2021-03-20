@@ -37,7 +37,9 @@ We would like to thank the following people that helped:
 
 - strongtz
 
-- TAO_Croatia, wetdreams
+- TAO_Croatia
+
+- wetdreams
 
 - Our testers, you know who you are :)
 
