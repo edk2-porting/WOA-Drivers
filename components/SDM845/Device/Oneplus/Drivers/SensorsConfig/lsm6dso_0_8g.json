@@ -1,0 +1,19 @@
+{
+  "config":
+  {
+    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK"],
+    "soc_id": ["341", "347"]
+  },
+  "lsm6dso_0":{
+    "owner": "lsm6dso",
+    ".accel":{
+      "owner": "lsm6dso",
+      ".config":{
+        "owner": "lsm6dso",
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "2"
+        }
+      }
+    }
+  }
+}

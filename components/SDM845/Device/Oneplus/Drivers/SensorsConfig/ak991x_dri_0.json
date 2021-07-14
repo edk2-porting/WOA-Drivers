@@ -1,0 +1,39 @@
+{
+  "config":{
+    "hw_platform": ["QRD", "MTP", "Dragon", "Surf", "HDK", "IDP"],
+    "soc_id": ["291", "246", "305", "321", "336", "341", "360", "393"]
+  },
+  "ak0991x_0":{
+    "owner": "sns_ak0991x",
+    ".mag":{
+      "owner": "sns_ak0991x",
+      ".config":{
+        "owner": "sns_ak0991x",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      },
+      ".config_2":{
+        "owner": "sns_ak0991x",
+        "use_fifo":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "nsf":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sdr":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  }
+}

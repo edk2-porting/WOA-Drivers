@@ -1,0 +1,238 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Surf", "QRD"],
+    "soc_id": ["321"]
+  },
+  "lsm6ds3c_0_platform":{
+    "owner": "lsm6ds3c",
+    ".config":{
+      "owner": "lsm6ds3c",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "9600"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "118"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".orient":{
+      "owner": "lsm6ds3c",
+      "x":{ "type": "str", "ver": "0",
+        "data": "+y"
+      },
+      "y":{ "type": "str", "ver": "0",
+        "data": "-x"
+      },
+      "z":{ "type": "str", "ver": "0",
+        "data": "+z"
+      }
+    },
+    ".gyro":{
+      "owner": "lsm6ds3c",
+      ".fac_cal":{
+        "owner": "lsm6ds3c",
+        ".corr_mat":{
+          "owner": "lsm6ds3c",
+          "0_0":{ "type": "flt", "ver": "0",
+            "data": "1.0"
+          },
+          "0_1":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "0_2":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "1_0":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "1_1":{ "type": "flt", "ver": "0",
+            "data": "1.0"
+          },
+          "1_2":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "2_0":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "2_1":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "2_2":{ "type": "flt", "ver": "0",
+            "data": "1.0"
+          }
+        },
+        ".bias":{
+          "owner": "lsm6ds3c",
+          "x":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "y":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "z":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          }
+        }
+      }
+    },
+    ".accel":{
+      "owner": "lsm6ds3c",
+      ".fac_cal":{
+        "owner": "lsm6ds3c",
+        ".corr_mat":{
+          "owner": "lsm6ds3c",
+          "0_0":{ "type": "flt", "ver": "0",
+            "data": "1.0"
+          },
+          "0_1":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "0_2":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "1_0":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "1_1":{ "type": "flt", "ver": "0",
+            "data": "1.0"
+          },
+          "1_2":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "2_0":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "2_1":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "2_2":{ "type": "flt", "ver": "0",
+            "data": "1.0"
+          }
+        },
+        ".bias":{
+          "owner": "lsm6ds3c",
+          "x":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "y":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          },
+          "z":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          }
+        }
+      }
+    },
+    ".temp":{
+      "owner": "lsm6ds3c",
+      ".fac_cal":
+      {
+        "owner": "lsm6ds3c",
+        ".scale":{
+          "owner": "lsm6ds3c",
+          "x":{ "type": "flt", "ver": "0",
+            "data": "1.0"
+          }
+        },
+        ".bias":{
+          "owner": "lsm6ds3c",
+          "x":{ "type": "flt", "ver": "0",
+            "data": "0.0"
+          }
+        }
+      }
+    },
+    ".md":{
+      "owner": "lsm6ds3c",
+      ".config":{
+        "owner": "lsm6ds3c",
+        "thresh":{ "type": "flt", "ver": "0",
+            "data": "0.6132"
+        },
+        "disable":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "win":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        }
+      }
+    },
+    ".placement":{
+      "owner": "lsm6ds3c",
+      "0":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "1":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "2":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "3":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "4":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "8":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "9":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "10":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "11":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    }
+  }
+}

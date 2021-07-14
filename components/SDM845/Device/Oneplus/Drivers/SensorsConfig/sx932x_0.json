@@ -1,0 +1,28 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Surf"],
+    "soc_id": ["321"]
+  },
+  "sx932x_0":{
+    "owner": "sx932x_0",
+    ".sar":{
+      "owner": "sx932x_0",
+      ".config":{
+        "owner": "sx932x_0",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "2"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "config":{
+    "hw_platform": ["MTP"],
+    "soc_id": ["321"]
+  },
+  "apds9251_platform":{
+    "owner": "sns_apds9251",
+    ".config":{
+      "owner": "sns_apds9251",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "82"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "122"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vdd"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+    ".placement":{
+      "owner": "sns_apds9251",
+      "0":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "1":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "2":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "3":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "4":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "5":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "6":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "7":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "8":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "9":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "10":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      },
+      "11":{ "type": "flt", "ver": "0",
+        "data": "0.0"
+      }
+    },
+    ".ambient_light":{
+      "owner": "sns_apds9251",
+      ".fac_cal":{
+        "owner": "sns_apds9251",
+        "scale":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "bias":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        }
+      }
+    },		
+    ".ambient_temperature":{
+      "owner": "sns_apds9251",
+      ".fac_cal":{
+        "owner": "sns_apds9251",
+		    "ir_scale":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+		    "ir_bias":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+		    "red_scale":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+		    "red_bias":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+		    "green_scale":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+		    "green_bias":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+		    "blue_scale":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "blue_bias":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        }
+      }
+    }	
+  }
+}

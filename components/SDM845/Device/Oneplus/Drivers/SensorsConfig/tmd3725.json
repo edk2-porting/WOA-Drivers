@@ -1,0 +1,64 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Surf"],
+    "soc_id": ["321"]
+  },
+  "tmd3725":{
+    "owner": "sns_tmd3725",
+    ".als":{
+      "owner": "sns_tmd3725",
+      ".config":{
+        "owner": "sns_tmd3725",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    },
+    ".prox":{
+      "owner": "sns_tmd3725",
+      ".config":{
+        "owner": "sns_tmd3725",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    },
+    ".rgb":{
+      "owner": "sns_tmd3725",
+      ".config":{
+        "owner": "sns_tmd3725",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "2"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  }
+}

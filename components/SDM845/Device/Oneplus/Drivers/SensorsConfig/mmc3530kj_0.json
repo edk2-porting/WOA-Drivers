@@ -1,0 +1,28 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Surf", "QRD", "HDK"],
+    "soc_id": ["321", "341"]
+  },
+  "mmc3530kj_0":{
+    "owner": "sns_mmc3530kj",
+    ".mag":{
+      "owner": "sns_mmc3530kj",
+      ".config":{
+        "owner": "sns_mmc3530kj",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "config":
+  {
+    "hw_platform": ["QRD", "MTP", "Dragon", "Surf"],
+    "soc_id": ["291", "246", "305", "321", "336"]
+  },
+  "stk3x3x_0":{
+    "owner": "sns_stk3x3x",
+    ".ambient_light":{
+      "owner": "sns_stk3x3x",
+      ".config":{
+        "owner": "sns_stk3x3x",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    },
+	".proximity":{
+      "owner": "sns_stk3x3x",
+      ".config":{
+        "owner": "sns_stk3x3x",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "1"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  }
+}

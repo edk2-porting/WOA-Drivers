@@ -1,0 +1,238 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Dragon", "Surf"],
+    "soc_id": ["321", "291", "246", "305"]
+  },
+  "stk36xx_0_platform":{
+    "owner": "sns_stk36xx",
+    ".config":{
+      "owner": "sns_stk36xx",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "71"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "120"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vdd"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+	  ".als":{
+      "owner": "sns_stk36xx",
+      ".fac_cal":{
+        "owner": "sns_stk36xx",
+        "scale":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "bias":{ "type": "flt", "ver": "0",
+          "data": "5000.0"
+        }
+      }
+    },
+    ".rgb":{
+      "owner": "sns_stk36xx",
+      ".fac_cal":{
+        "owner": "sns_stk36xx",
+        "r_channel_scale":{ "type": "flt", "ver": "0",
+        	"data": "1.0"
+        },        
+        "r_channel_bias":{ "type": "flt", "ver": "0",
+        	"data": "0.0"
+        },        
+        "g_channel_scale":{ "type": "flt", "ver": "0",
+        	"data": "1.0"
+        },        
+        "g_channel_bias":{ "type": "flt", "ver": "0",
+        	"data": "0.0"
+        },        
+        "b_channel_scale":{ "type": "flt", "ver": "0",
+        	"data": "1.0"
+        },
+        "b_channel_bias":{ "type": "flt", "ver": "0",
+        	"data": "0.0"
+        },
+        "color_temp_scale":{ "type": "flt", "ver": "0",
+        	"data": "1.0"
+        },
+        "color_temp_bias":{ "type": "flt", "ver": "0",
+        	"data": "0.0"
+        }
+      },
+      ".target_value":{
+        "owner": "sns_stk36xx",
+        "comment": "abandoned after 2018/2/9, using group 'target_value_new'",
+        "r":{ "type": "flt", "ver": "0",
+        "data": "420.0"
+        },
+        "g":{ "type": "flt", "ver": "0",
+        "data": "284.0"
+        },
+        "b":{ "type": "flt", "ver": "0",
+        "data": "181.0"
+        }
+      },
+      ".target_value_new":{
+        "owner": "sns_stk36xx",
+        "tar_1_x":{ "type": "flt", "ver": "0",
+        "data": "1111.0"
+        },
+        "tar_1_y":{ "type": "flt", "ver": "0",
+        "data": "1000.0"
+        },
+        "tar_1_z":{ "type": "flt", "ver": "0",
+        "data": "474.0"
+        },
+        "tar_2_x":{ "type": "flt", "ver": "0",
+        "data": "710.7"
+        },
+        "tar_2_y":{ "type": "flt", "ver": "0",
+        "data": "726.7"
+        },
+        "tar_2_z":{ "type": "flt", "ver": "0",
+        "data": "621.1"
+        },
+        "tar_3_x":{ "type": "flt", "ver": "0",
+        "data": "2020.5"
+        },
+        "tar_3_y":{ "type": "flt", "ver": "0",
+        "data": "1835.0"
+        },
+        "tar_3_z":{ "type": "flt", "ver": "0",
+        "data": "612.0"
+        }        
+      },
+      ".current_value":{
+        "owner": "sns_stk36xx",
+        "ref_1_r":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+        },
+        "ref_1_g":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+        },
+        "ref_1_b":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+        },
+        "ref_2_r":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+        },
+        "ref_2_g":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+        },
+        "ref_2_b":{ "type": "flt", "ver": "0",
+        "data": "1.0"
+        },
+        "ref_3_r":{ "type": "flt", "ver": "0",
+        "data": "8191.0"
+        },
+        "ref_3_g":{ "type": "flt", "ver": "0",
+        "data": "3215.0"
+        },
+        "ref_3_b":{ "type": "flt", "ver": "0",
+        "data": "1141.5"
+        }        
+      },      
+      ".matrix_value":{
+		    "owner": "sns_stk36xx",
+        "Matrix00":{ "type": "flt", "ver": "0",
+        "data": "0.01669"
+        },
+        "Matrix10":{ "type": "flt", "ver": "0",
+        "data": "-0.0158"
+        },
+        "Matrix20":{ "type": "flt", "ver": "0",
+        "data": "-0.02001"
+        },
+        "Matrix01":{ "type": "flt", "ver": "0",
+        "data": "0.1465"
+        },
+        "Matrix11":{ "type": "flt", "ver": "0",
+        "data": "0.15941"
+        },
+        "Matrix21":{ "type": "flt", "ver": "0",
+        "data": "0.0152"
+        },
+        "Matrix02":{ "type": "flt", "ver": "0",
+        "data": "-0.01306"
+        },
+        "Matrix12":{ "type": "flt", "ver": "0",
+        "data": "0.03247"
+        },
+        "Matrix22":{ "type": "flt", "ver": "0",
+        "data": "0.3157"
+        }        
+      },
+      ".linear_info":{
+        "owner": "sns_stk36xx",
+        "first_target":{ "type": "flt", "ver": "0",
+        "data": "3000.0"
+        },
+        "second_target":{ "type": "flt", "ver": "0",
+        "data": "5000.0"
+        },
+        "a_para":{ "type": "flt", "ver": "0",
+        "data": "4504.329590"
+        },
+        "b_para":{ "type": "flt", "ver": "0",
+        "data": "849.900879"
+        },
+        "ratio_1":{ "type": "flt", "ver": "0",
+        "data": "0.475198"
+        },
+        "ratio_2":{ "type": "flt", "ver": "0",
+        "data": "0.920330"
+        }
+      }
+    },	
+    ".ps":{
+      "owner": "sns_stk36xx",
+      ".fac_cal":{
+        "owner": "sns_stk36xx",
+        "near_threshold":{ "type": "flt", "ver": "0",
+          "data": "800.0"
+        },
+        "far_threshold":{ "type": "flt", "ver": "0",
+          "data": "500.0"
+        }
+      }
+    }
+  }
+}

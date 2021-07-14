@@ -1,0 +1,27 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Dragon", "Surf"],
+    "soc_id": ["291", "246", "305", "321"]
+  },
+  "mmc5603nj_0":{
+    "owner": "sns_mmc5603nj",
+    ".mag":{
+      "owner": "sns_mmc5603nj",
+      ".config":{
+        "owner": "sns_mmc5603nj",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  }
+}

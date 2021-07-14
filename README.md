@@ -3,6 +3,23 @@
 
 This repository contains driver binary files for Qualcomm Snapdragon platforms.
 
+# How to use 如何使用？
+
+**Please run the following command before deploying drivers!**
+
+**请在安装驱动前执行下列命令！！**
+
+其中DEVICE为设备代号！务必确认！
+
+```
+.\extract.ps1 DEVICE
+```
+
+or
+
+```
+./extract.sh DEVICE
+```
 
 ## Copyright, License, Disclaimers and end user license agreement
 

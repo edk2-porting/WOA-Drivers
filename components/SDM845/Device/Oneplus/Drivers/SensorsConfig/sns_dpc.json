@@ -1,0 +1,27 @@
+{
+  "config": {
+    "hw_platform": ["MTP", "Dragon", "Surf", "QRD", "HDK", "IDP"],
+    "soc_id": ["291", "246", "305", "321", "336", "339", "341", "355", "356", "360", "361", "365", "366", "393", "394", "400"]
+  },
+  "sns_dpc": {
+    "owner": "sns_dpc",
+    "param1": {
+      "ver": "0", "type": "flt", "data": "0.5"
+    },
+    "param2": {
+      "ver": "0", "type": "flt", "data": "0.02"
+    },
+    "param3": {
+      "ver": "0", "type": "flt", "data": "0.04"
+    },
+    "param4": {
+      "ver": "0", "type": "flt", "data": "7.5"
+    },
+    "param5": {
+      "ver": "0", "type": "flt", "data": "0.1"
+    },
+    "param6": {
+      "ver": "0", "type": "flt", "data": "0.1746"
+    }
+  }
+}

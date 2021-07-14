@@ -1,0 +1,15 @@
+mcfg_hw/generic/common/MSM8998/WD/SS/mcfg_hw.mbn
+mcfg_hw/generic/common/MSM8998/WD/7+7_mode/SR_DSDS/mcfg_hw.mbn
+mcfg_hw/generic/common/MSM8998/WP8/SS/mcfg_hw.mbn
+mcfg_hw/generic/common/MSM8998/WP8/7+7_mode/SR_DSDS/mcfg_hw.mbn
+mcfg_hw/generic/common/MSM8998/cmcc_subsidized/SR_DSDS/mcfg_hw.mbn
+mcfg_hw/generic/common/SDM670/cmcc_subsidized/SR_DSDS/mcfg_hw.mbn
+mcfg_hw/generic/common/SDM660/cmcc_subsidized/SR_DSDS/mcfg_hw.mbn
+mcfg_hw/generic/common/SDM845/WD/SS/mcfg_hw.mbn
+mcfg_hw/generic/common/SDM845/WD/7+7_mode/SR_DSDS/mcfg_hw.mbn
+mcfg_hw/generic/common/SDM845/WP8/SS/mcfg_hw.mbn
+mcfg_hw/generic/common/SDM845/WP8/7+7_mode/SR_DSDS/mcfg_hw.mbn
+mcfg_hw/generic/common/SDM845/cmcc_subsidized/SR_DSDS/mcfg_hw.mbn
+mcfg_hw/generic/common/SDM850/WD/7+7_mode/SR_DSDS/mcfg_hw.mbn
+mcfg_hw/generic/common/SDM850/WD/DSSA/mcfg_hw.mbn
+mcfg_hw/generic/common/SDM850/WD/SS/mcfg_hw.mbn
