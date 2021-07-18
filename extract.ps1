@@ -28,6 +28,7 @@ $Output=New-Item `
 Get-Content `
     -Path $Config | `
     Copy-Item `
+        -Force `
         -Recurse `
         -Path { "."+$_ } `
         -Destination $Output
