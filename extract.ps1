@@ -5,7 +5,6 @@ $DefConfig="sdm845-generic"
 $Config=Join-Path `
     -Path $Configs `
     -ChildPath (-Join ($CodeName,".txt"))
-Write-Output $Config
 If( -Not (Test-Path -Path $Config)){
     Write-Output "warning: your model has no definition file, use default"
     $Config=Join-Path `
@@ -22,6 +21,7 @@ If(Test-Path -Path output){
         -Force `
         -Path output
 }
+Write-Output "copying drivers..."
 $Output=New-Item `
     -ItemType Directory `
     -Path output
@@ -29,15 +29,17 @@ Get-Content `
     -Path $Config | `
     Copy-Item `
         -Recurse `
-        -Verbose `
         -Path { "."+$_ } `
         -Destination $Output
+Write-Output "rename drivers..."
 Get-ChildItem `
     -Recurse `
     -Path $Output `
     -Filter *.inf_ | `
-Rename-Item `
-    -NewName { `
-        $_.FullName `
-            -Replace '\.inf_','.inf' `
-    }
+    Rename-Item `
+        -NewName { `
+            $_.FullName `
+                -Replace '\.inf_','.inf' `
+        }
+Write-Output "done"
+

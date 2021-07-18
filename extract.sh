@@ -21,12 +21,15 @@ then
 	fi
 fi
 rm -rf ./output
+echo "copying drivers..."
 while read -r line
 do
 	file="${line//$'\r'/}"
 	file="${file//\\/\/}"
-	cp -vr ."${file}" output/
+	cp -r ."${file}" output/
 done<"${CONFIG}"
+echo "rename drivers..."
 find output -type f -name '*.inf_'|while read -r line
-do mv -v "${line}" "${line//.inf_/.inf}"
+do mv "${line}" "${line//.inf_/.inf}"
 done
+echo "done"
