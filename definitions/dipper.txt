@@ -1,0 +1,15 @@
+\components\SDM845\Platform\minimal
+\components\SDM845\Platform\Subsys\Cellular
+\components\SDM845\Platform\Subsys\GPS
+\components\SDM845\Platform\Subsys\PDSR
+\components\SDM845\Platform\Subsys\qSarMgr
+\components\SDM845\Platform\Subsys\SCM
+\components\SDM845\Platform\Subsys\Tftp
+\components\SDM845\Platform\Subsys\TrEE
+\components\SDM845\Device\Generic\Cellular
+\components\SDM845\Device\Generic\HexagonLoader
+\components\SDM845\Device\Generic\Subsystems
+\components\SDM845\Device\Generic\WLAN
+\components\SDM845\Device\Xiaomi\Cellular
+\components\SDM845\Device\Xiaomi\HexagonLoader
+\components\SDM845\Device\Xiaomi\Subsystems
