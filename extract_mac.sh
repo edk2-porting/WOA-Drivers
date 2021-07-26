@@ -8,18 +8,13 @@ then
 fi
 cd "$(dirname "$0")"
 CONFIGS=definitions
-DEF=sdm845-generic
 CONFIG="${CONFIGS}/${1}.txt"
 if ! [ -f "${CONFIG}" ]
 then
-	echo "warning: your model has no definition file, use default" >&2
-	CONFIG="${CONFIGS}/${DEF}.txt"
-	if ! [ -f "${CONFIG}" ]
-	then
-		echo "default definition file not found"
-		exit 1
-	fi
+	echo "ERROR: your model has no definition file, please check!" >&2
+	exit 1
 fi
+rm -rf ./output
 echo "copying drivers..."
 while read -r line
 do
