@@ -1,0 +1,2 @@
+\components\SDM845\Platform\minimal
+\components\SDM845\Platform\GPIO
