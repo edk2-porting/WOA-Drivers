@@ -8,5 +8,5 @@
 \components\SDM845\Device\Oneplus\Cellular
 \components\SDM845\Device\Oneplus\SensorsConfig
 \components\SDM845\Device\Oneplus\Subsystems
-\components\AnySoC\Touchscreen\SynapticsTouch_F12
+\components\AnySoC\SynapticsTouch-OP6T
 \components\SDM845\Platform\FG
