@@ -10,3 +10,4 @@
 \components\SDM845\Device\Oneplus\Subsystems
 \components\AnySoC\SynapticsTouch-OP6
 \components\SDM845\Platform\FG
+\components\SDM845\Platform\Bluetooth

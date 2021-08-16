@@ -14,3 +14,4 @@
 \components\SDM845\Device\Xiaomi\HexagonLoader
 \components\SDM845\Device\Xiaomi\Subsystems
 \components\SDM845\Platform\FG
+\components\SDM845\Platform\Bluetooth

@@ -1,2 +1,4 @@
 \components\SDM845\Platform\minimal
 \components\SDM845\Platform\GPIO
+\components\SDM845\Platform\Bluetooth
+
