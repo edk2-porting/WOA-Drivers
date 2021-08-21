@@ -1,4 +1,6 @@
 \components\SDM845\Platform\minimal
 \components\SDM845\Platform\GPIO
 \components\SDM845\Platform\Bluetooth
+\components\SDM845\Platform\Archive\IOMMU\10730
+\components\SDM845\Platform\Archive\SMMU\10730
 
