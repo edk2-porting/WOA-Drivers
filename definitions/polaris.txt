@@ -15,6 +15,7 @@
 \components\SDM845\Device\Xiaomi\Subsystems
 \components\SDM845\Device\Xiaomi\SynapticsTouch
 \components\SDM845\Platform\FG
+\components\SDM845\Platform\Bluetooth
 \components\SDM845\Platform\GPIO
 \components\SDM845\Platform\Archive\IOMMU\10730
 \components\SDM845\Platform\Archive\SMMU\10420
