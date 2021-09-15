@@ -1,0 +1,43 @@
+name: CI
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    name: Drivers Packager
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        device:
+          - akershus
+          - ayn-odin
+          - beryllium
+          - dipper-old
+          - dipper
+          - draco
+          - enchilada
+          - equuleus
+          - fajita
+          - judyln
+          - m1882
+          - m1892
+          - nx616j
+          - olympic
+          - pafm00
+          - pd1821
+          - perseus
+          - polaris
+          - sdm845-generic
+          - skr-a0
+          - star2qltechn
+          - trident
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Package device ${{ matrix.device }}
+        run: ./extract.sh ${{ matrix.device }}
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ matrix.device }}
+          path: ./output/*
