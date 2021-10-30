@@ -1,0 +1,9 @@
+\components\MSM8998\Platform\minimal
+\components\MSM8998\Platform\Subsys\Cellular
+\components\MSM8998\Platform\Subsys\PDSR
+\components\MSM8998\Platform\Subsys\SCM
+\components\MSM8998\Platform\Subsys\Tftp
+\components\MSM8998\Platform\Subsys\TrEE
+\components\MSM8998\Device\Generic\HexagonLoader
+\components\AnySoC\SynapticsTouch-OP5
+\components\MSM8998\Platform\Bluetooth
