@@ -23,3 +23,4 @@
 \components\SDM845\Device\Xiaomi\GPU
 \components\SDM845\Platform\Audio
 \components\SDM845\Platform\Camera
+\components\AnySoC\NFC
