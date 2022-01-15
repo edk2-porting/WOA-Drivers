@@ -14,7 +14,7 @@
 \components\SDM845\Device\Xiaomi\Cellular
 \components\SDM845\Device\Xiaomi\HexagonLoader
 \components\SDM845\Device\Xiaomi\Subsystems
-\components\SDM845\Device\Xiaomi\SynapticsTouch
+\components\SDM845\Device\Xiaomi\Polaris
 \components\SDM845\Platform\FG
 \components\SDM845\Platform\Bluetooth
 \components\SDM845\Platform\GPIO
@@ -22,3 +22,4 @@
 \components\SDM845\Platform\Archive\SMMU\10420
 \components\SDM845\Device\Xiaomi\GPU
 \components\SDM845\Platform\Audio
+\components\SDM845\Platform\Camera
