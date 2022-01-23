@@ -1,0 +1,51 @@
+name: release
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  build:
+    name: build_release
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        device:
+          - akershus
+          - ayn-odin
+          - beryllium
+          - dipper-old
+          - dipper
+          - draco
+          - enchilada
+          - equuleus
+          - fajita
+          - judyln
+          - m1882
+          - m1892
+          - nx616j
+          - olympic
+          - pafm00
+          - pd1821
+          - perseus
+          - polaris
+          - sdm845-generic
+          - skr-a0
+          - star2qltechn
+          - trident
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
+      - name: Package device ${{ matrix.device }}
+        run: ./extract.sh ${{ matrix.device }}
+
+      - name: Compress package device ${{ matrix.device }}
+        run: tar -czf ${{ matrix.device }}.tar.gz output
+          
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ${{ matrix.device }}.tar.gz
+          
