@@ -32,12 +32,12 @@ FocalTechTouch.sys  = 1,,
 AddReg    = Resolutions.NT.HW.AddReg
 
 [Resolutions.NT.HW.AddReg]
-HKLM, %ScreenProps%, "TouchPhysicalHeight", 0x10001, 0x438
-HKLM, %ScreenProps%, "TouchPhysicalWidth", 0x10001, 0x8c6
-HKLM, %ScreenProps%, "DisplayPhysicalHeight", 0x10001, 0x438
-HKLM, %ScreenProps%, "DisplayPhysicalWidth", 0x10001, 0x8c6
-HKLM, %ScreenProps%, "DisplayViewableHeight", 0x10001, 0x438
-HKLM, %ScreenProps%, "DisplayViewableWidth", 0x10001, 0x8c6
+HKLM, %ScreenProps%, "TouchPhysicalWidth", 0x10001, 0x438
+HKLM, %ScreenProps%, "TouchPhysicalHeight", 0x10001, 0x8c6
+HKLM, %ScreenProps%, "DisplayPhysicalWidth", 0x10001, 0x438
+HKLM, %ScreenProps%, "DisplayPhysicalHeight", 0x10001, 0x8c6
+HKLM, %ScreenProps%, "DisplayViewableWidth", 0x10001, 0x438
+HKLM, %ScreenProps%, "DisplayViewableHeight", 0x10001, 0x8c6
 
 ;*****************************************
 ; TchDriver client driver Install Section
