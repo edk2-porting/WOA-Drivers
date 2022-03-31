@@ -1,0 +1,16 @@
+\components\SDM845\Platform\minimal
+\components\SDM845\Platform\GPIO
+\components\SDM845\Platform\FG\BattMiniclass
+\components\SDM845\Platform\FG\FGBCL
+\components\SDM845\Platform\Bluetooth
+\components\SDM845\Platform\Archive\IOMMU\10730
+\components\SDM845\Platform\Archive\SMMU\10420
+\components\SDM845\Device\Generic\HexagonLoader
+\components\SDM845\Device\Generic\Subsystems\MCFG_Subsys_ext
+\components\SDM845\Device\Generic\Subsystems\RPC
+\components\SDM845\Device\Generic\Subsystems\Subsys_Extension
+\components\SDM845\Device\Generic\WLAN
+\components\SDM845\Platform\Subsys
+\components\SDM845\Device\Generic\Cellular
+\components\SDM845\Device\LG\Cellular
+\components\SDM845\Device\LG\GPU
