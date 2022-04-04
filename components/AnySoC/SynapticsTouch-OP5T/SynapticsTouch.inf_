@@ -1,0 +1,112 @@
+;
+; SynapticsTouch.INF
+; Copyright (c) 2000,2015 Microsoft Corporation
+; Copyright (c) 2018,2019 Bingxing Wang
+; Copyright (c) 2018,2021 LumiaWoA authors
+;
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = HIDClass
+ClassGuid   = {745A17A0-74D3-11D0-B6FE-00A0C90F57DA}
+Provider    = %Provider_Name%
+DriverVer = 09/07/2021,22.46.2.71
+CatalogFile = SynapticsTouch.cat
+PnpLockdown = 1
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+[SourceDisksNames]
+1 = %Installation_Disk%,,,""
+
+[SourceDisksFiles]
+SynapticsTouch.sys  = 1,,
+
+[Manufacturer]
+%Manufacturer_Name% = Standard,NTARM64
+
+[Standard.NTARM64]
+%TchDriver_Device_Desc% = TchDriver_Device.NT, ACPI\MSHW1003
+%TchDriver_Device_Desc% = TchDriver_Device.NT, ACPI\NOKIA_TOUCH
+
+;*****************************************
+; TchDriver client driver Install Section
+;*****************************************
+
+[TchDriver_Device.NT]
+CopyFiles = TchDriver_Device.NT.CopyFiles
+
+[TchDriver_Device.NT.CopyFiles]
+SynapticsTouch.sys
+
+[TchDriver_Device.NT.HW]
+AddReg = FilterInst.NT.HW.AddReg
+AddReg = Resolutions.NT.HW.AddReg
+AddReg = DisplaySize.NT.HW.AddReg
+
+[FilterInst.NT.HW.AddReg]
+HKR,,"UpperFilters",    %REG_MULTI_SZ%, mshidkmdf
+HKR,,"MultiportDevice", %REG_DWORD%,    0
+
+[Resolutions.NT.HW.AddReg]
+HKLM, %ScreenProps%, "DisplayHeight10um", 0x10001, 0x3584
+HKLM, %ScreenProps%, "DisplayLetterBoxHeightBottom", 0x10001, 0x0
+HKLM, %ScreenProps%, "DisplayLetterBoxHeightTop", 0x10001, 0x0
+HKLM, %ScreenProps%, "DisplayPhysicalHeight", 0x10001, 0x870
+HKLM, %ScreenProps%, "DisplayPhysicalWidth", 0x10001, 0x438
+HKLM, %ScreenProps%, "DisplayPillarBoxWidthLeft", 0x10001, 0x0
+HKLM, %ScreenProps%, "DisplayPillarBoxWidthRight", 0x10001, 0x0
+HKLM, %ScreenProps%, "DisplayViewableHeight", 0x10001, 0x870
+HKLM, %ScreenProps%, "DisplayViewableWidth", 0x10001, 0x438
+HKLM, %ScreenProps%, "DisplayWidth10um", 0x10001, 0x1ac2
+HKLM, %ScreenProps%, "TouchInvertXAxis", 0x10001, 0x0
+HKLM, %ScreenProps%, "TouchInvertYAxis", 0x10001, 0x0
+HKLM, %ScreenProps%, "TouchPhysicalButtonHeight", 0x10001, 0x0
+HKLM, %ScreenProps%, "TouchPhysicalHeight", 0x10001, 0x870
+HKLM, %ScreenProps%, "TouchPhysicalWidth", 0x10001, 0x438
+HKLM, %ScreenProps%, "TouchPillarBoxHeightBottom", 0x10001, 0x0
+HKLM, %ScreenProps%, "TouchPillarBoxHeightTop", 0x10001, 0x0
+HKLM, %ScreenProps%, "TouchPillarBoxWidthLeft", 0x10001, 0x0
+HKLM, %ScreenProps%, "TouchPillarBoxWidthRight", 0x10001, 0x0
+HKLM, %ScreenProps%, "TouchSwapAxes", 0x10001, 0x0
+
+[DisplaySize.NT.HW.AddReg]
+HKLM, %DisplaySize%, "DisplayHeight10um", 0x10001, 0x3584
+HKLM, %DisplaySize%, "DisplayWidth10um", 0x10001, 0x1ac2
+
+;-------------- Service installation
+[TchDriver_Device.NT.Services]
+AddService = SynapticsTouch, %SPSVCINST_ASSOCSERVICE%, TchDriver_Service_Inst
+
+; ------------- TchDriver driver install section
+[TchDriver_Service_Inst]
+DisplayName    = %TchDriver_Service_Desc%
+ServiceType    = %SERVICE_KERNEL_DRIVER%
+StartType      = %SERVICE_DEMAND_START%
+ErrorControl   = %SERVICE_ERROR_NORMAL%
+ServiceBinary  = %13%\SynapticsTouch.sys
+LoadOrderGroup = Base
+
+; ------------- Strings section
+[Strings]
+Provider_Name           = "LumiaWoA authors"
+Manufacturer_Name       = "Synaptics"
+Installation_Disk       = "Synaptics RMI4 over Function 12 (2D Multifinger Pointing/Pen) Digitizer (S3320) Installation Disk"
+TchDriver_Device_Desc   = "Synaptics RMI4 over Function 12 (2D Multifinger Pointing/Pen) Digitizer (S3320) - OnePlus 5T"
+TchDriver_Service_Desc  = "Synaptics RMI4 over Function 12 (2D Multifinger Pointing/Pen) Digitizer (S3320) Driver"
+
+; ------------- non-localizable strings
+ScreenProps            = "System\Touch\SCREENPROPERTIES"
+DisplaySize            = "System\Touch\DISPLAYPROPERTIES"
+SPSVCINST_ASSOCSERVICE  = 0x00000002
+SERVICE_KERNEL_DRIVER   = 1
+SERVICE_BOOT_START      = 0
+SERVICE_SYSTEM_START    = 1
+SERVICE_DEMAND_START    = 3
+SERVICE_ERROR_NORMAL    = 1
+SERVICE_ERROR_IGNORE    = 0
+SERVICE_ERROR_CRITICAL  = 3
+REG_EXPAND_SZ           = 0x00020000
+REG_MULTI_SZ            = 0x00010000
+REG_DWORD               = 0x00010001
+REG_SZ                  = 0x00000000
