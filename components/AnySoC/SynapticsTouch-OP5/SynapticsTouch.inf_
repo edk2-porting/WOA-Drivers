@@ -59,8 +59,8 @@ HKLM, %ScreenProps%, "DisplayPillarBoxWidthRight", 0x10001, 0x0
 HKLM, %ScreenProps%, "DisplayViewableHeight", 0x10001, 0x780
 HKLM, %ScreenProps%, "DisplayViewableWidth", 0x10001, 0x438
 HKLM, %ScreenProps%, "DisplayWidth10um", 0x10001, 0x1ac2
-HKLM, %ScreenProps%, "TouchInvertXAxis", 0x10001, 0x0
-HKLM, %ScreenProps%, "TouchInvertYAxis", 0x10001, 0x0
+HKLM, %ScreenProps%, "TouchInvertXAxis", 0x10001, 0x1
+HKLM, %ScreenProps%, "TouchInvertYAxis", 0x10001, 0x1
 HKLM, %ScreenProps%, "TouchPhysicalButtonHeight", 0x10001, 0x0
 HKLM, %ScreenProps%, "TouchPhysicalHeight", 0x10001, 0x780
 HKLM, %ScreenProps%, "TouchPhysicalWidth", 0x10001, 0x438
