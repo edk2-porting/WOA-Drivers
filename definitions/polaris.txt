@@ -4,6 +4,7 @@
 \components\SDM845\Platform\Subsys\PDSR
 \components\SDM845\Platform\Subsys\qSarMgr
 \components\SDM845\Platform\Subsys\SCM
+\components\SDM845\Platform\Subsys\Sensors
 \components\SDM845\Platform\Subsys\SSVC
 \components\SDM845\Platform\Subsys\Tftp
 \components\SDM845\Platform\Subsys\TrEE

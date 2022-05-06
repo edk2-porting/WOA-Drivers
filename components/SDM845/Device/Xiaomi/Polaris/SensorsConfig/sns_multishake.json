@@ -1,0 +1,28 @@
+{
+  "config": {
+    "hw_platform": [
+      "MTP", "Dragon", "Surf", "POLARIS"
+    ],
+    "soc_id": [
+      "291", "246", "305", "321"
+    ]
+  },
+  "sns_multishake": {
+    "owner": "sns_multishake",
+    "min_shake_period": {
+      "ver": "0", "type": "flt", "data": "0.22"
+    },
+    "max_shake_period": {
+      "ver": "0", "type": "flt", "data": "0.7"
+    },
+    "sleep_time": {
+      "ver": "0", "type": "flt", "data": "0.12"
+    },
+    "shake_thresh": {
+      "ver": "0",  "type": "flt", "data": "1.5"
+    },
+    "sample_rate": {
+      "ver": "0", "type": "flt", "data": "100.0"
+    }
+  }
+}

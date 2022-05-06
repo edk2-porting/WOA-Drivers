@@ -1,0 +1,326 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Dragon", "Surf", "POLARIS"],
+    "soc_id": ["291", "246", "305", "321"]
+  },
+
+
+  "sns_diag_sensor_datatype":
+  {
+    "owner":"diag_filter_sensor",
+
+    "geomag_rv":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "game_rv":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "gravity":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "cm":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "accel":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "humidity":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "ambient_temperature":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "sensor_temperature":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "motion_detect":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "gyro":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "ultra_violet":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "pressure":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "mag":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "thermopile":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "ambient_light":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "hall":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "proximity":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "rgb":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "test":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "flush_test":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "md_test":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "da_test":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "amd":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "rmd":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "facing":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "gyro_cal":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "oem1":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "mag_cal":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "resampler":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "smd":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "basic_gestures":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "multishake":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "bring_to_ear":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "cmc":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "dpc":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "distance_bound":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "gyro_rot_matrix":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "fmv":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "rotv":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "pedometer":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "device_orient":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "tilt":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "tilt_to_wake":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "ori":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "NonUi":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "pickup":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "Aod":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "sar_sensor":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "sar_algo":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "sar_sensor_2":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "ambient_light_cal_strm":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    },
+    "proximity_cal_strm":
+    {
+      "type" : "int",
+      "ver" : "0",
+      "data" : "1"
+    }
+  }
+}

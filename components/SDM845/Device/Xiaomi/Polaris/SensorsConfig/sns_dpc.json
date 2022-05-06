@@ -1,0 +1,31 @@
+{
+  "config": {
+    "hw_platform": [
+      "MTP", "Dragon", "Surf", "POLARIS"
+    ],
+    "soc_id": [
+      "291", "246", "305", "321"
+    ]
+  },
+  "sns_dpc": {
+    "owner": "sns_dpc",
+    "param1": {
+      "ver": "0", "type": "flt", "data": "0.5"
+    },
+    "param2": {
+      "ver": "0", "type": "flt", "data": "0.02"
+    },
+    "param3": {
+      "ver": "0", "type": "flt", "data": "0.04"
+    },
+    "param4": {
+      "ver": "0", "type": "flt", "data": "7.5"
+    },
+    "param5": {
+      "ver": "0", "type": "flt", "data": "0.1"
+    },
+    "param6": {
+      "ver": "0", "type": "flt", "data": "0.1746"
+    }
+  }
+}

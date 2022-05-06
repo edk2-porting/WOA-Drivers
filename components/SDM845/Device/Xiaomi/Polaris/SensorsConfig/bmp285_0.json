@@ -1,0 +1,46 @@
+{
+  "config":
+  {
+    "hw_platform": ["MTP", "Dragon", "Surf", "POLARIS"],
+    "soc_id": ["291", "246", "305", "321"]
+  },
+  "bmp285_0":{
+    "owner": "sns_bmp285",
+    ".temp":{
+      "owner": "sns_bmp285",
+      ".config":{
+        "owner": "sns_bmp285",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "2"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    },
+    ".pressure":{
+      "owner": "sns_bmp285",
+      ".config":{
+        "owner": "sns_bmp285",
+        "is_dri":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "2"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    }
+  }
+}

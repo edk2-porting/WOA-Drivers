@@ -1,0 +1,15 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Dragon", "Surf", "POLARIS"],
+    "soc_id": ["291", "246", "305","321"]
+  },
+  "sns_cm":{
+    "owner": "sns_cm",
+        "heap_size":{ "type": "int", "ver": "0",
+          "data": "1572864"
+    },
+    "max_batch_disabled":{ "type": "int", "ver": "0",
+          "data": "0"
+    }
+  }
+}

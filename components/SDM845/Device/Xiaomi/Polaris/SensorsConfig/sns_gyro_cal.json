@@ -1,0 +1,34 @@
+{
+  "config": {
+    "hw_platform": [
+      "MTP",
+      "Dragon",
+      "Surf",
+      "POLARIS"
+    ],
+    "soc_id": [
+      "291",
+      "246",
+      "305",
+      "321"
+    ]
+  },
+  "sns_gyro_cal_config": {
+    "owner": "sns_gyro_cal",
+    "calibration_period": {"type": "int","ver": "0",
+      "data": "60"
+    },
+    "num_samples": {"type": "int","ver": "0",
+      "data": "32"
+    },
+    "variance_threshold": {"type": "flt","ver": "0",
+      "data": "0.00025"
+    },
+    "sample_rate": {"type": "flt","ver": "0",
+     "data": "10.0"
+    },
+    "bias_threshold": {"type": "flt","ver": "0",
+     "data": "0.20"
+    }
+  }
+}

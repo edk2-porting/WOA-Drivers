@@ -1,0 +1,19 @@
+{
+  "config": {
+    "hw_platform": [ "MTP", "Dragon", "Surf", "POLARIS"
+    ],
+    "soc_id": ["291", "246", "305", "321"
+    ]
+  },
+  "sns_amd": {
+    "owner": "sns_amd",
+    "param1": {"ver": "0","type": "flt","data": "0.06"
+    },
+    "param2": {"ver": "0","type": "flt","data": "0.5"
+    },
+    "sample_rate": {"ver": "1","type": "flt", "data": "50.0"
+    },
+    "enabled": {"ver": "0","type": "int", "data": "1"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Dragon", "Surf", "POLARIS"],
+    "soc_id": ["291", "246", "305", "321"]
+  },
+  "sns_facing": {
+    "owner": "sns_facing",
+    "angle_threshold": { "type": "flt", "ver": "0",
+      "data": "0.3491"
+    },
+    "report_neutral": { "type": "int", "ver": "0",
+      "data": "0"
+    },
+    "sample_rate": { "type": "flt", "ver": "0",
+      "data": "30.0"
+    },
+    "min_sample_rate": { "type": "flt", "ver": "0",
+      "data": "30.0"
+    },
+   "max_sample_rate": { "type": "flt", "ver": "0",
+     "data": "100.0"
+   }
+  }
+}

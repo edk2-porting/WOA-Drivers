@@ -1,0 +1,48 @@
+{
+  "config":{
+    "hw_platform": ["MTP", "Dragon", "Surf", "POLARIS"],
+    "soc_id": ["291", "246", "305", "321"]
+  },
+  "adux1050_1":{
+    "owner": "sns_adux1050",
+    ".proximity":{
+      "owner": "sns_adux1050",
+      ".config":{
+        "owner": "sns_adux1050",
+        "is_dri":{ "type": "int", "ver": "1",
+          "data": "0"
+        },
+        "hw_id":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "res_idx":{ "type": "int", "ver": "0",
+          "data": "0"
+        },
+        "sync_stream":{ "type": "int", "ver": "0",
+          "data": "0"
+        }
+      }
+    },
+    ".custom":{
+      "owner": "sns_adux1050",
+      ".config":{
+        "owner": "sns_adux1050",
+        "version":{ "type": "flt", "ver": "0",
+          "data": "0x0000"
+        },
+        "reg_06":{ "type": "flt", "ver": "0",
+          "data": "0x1800"
+        },
+        "reg_09":{ "type": "flt", "ver": "0",
+          "data": "0x0000"
+        },
+        "reg_0A":{ "type": "flt", "ver": "0",
+          "data": "0x0000"
+        },
+        "reg_79":{ "type": "flt", "ver": "0",
+          "data": "0x0000"
+        }
+      }
+    }
+  }
+}

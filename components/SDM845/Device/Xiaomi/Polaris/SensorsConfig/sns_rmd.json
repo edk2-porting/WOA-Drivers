@@ -1,0 +1,28 @@
+{
+  "config": {
+    "hw_platform": [
+      "MTP", "Dragon", "Surf", "POLARIS"
+    ],
+    "soc_id": [
+      "291", "246", "305", "321"
+    ]
+  },
+  "sns_rmd": {
+    "owner": "sns_rmd",
+    "param4": {
+      "ver": "0", "type": "flt", "data": "0.2"
+    },
+    "param3": {
+      "ver": "0", "type": "flt", "data": "5.7"
+    },
+    "param2": {
+      "ver": "0", "type": "flt", "data": "0.2"
+    },
+    "param1": {
+      "ver": "0", "type": "flt", "data": "153.0"
+    },
+   "sample_rate": {
+     "ver": "0", "type": "flt", "data": "30.0"
+   }
+  }
+}
