@@ -86,7 +86,7 @@ SOFTWARE.
 
 ## Project Status
 
-To be filled
+[Device Support Status](https://renegade-project.org/#/en/windows/state-frame.html)
 
 ## Cloning
 
