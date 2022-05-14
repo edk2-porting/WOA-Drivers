@@ -9,7 +9,8 @@
 \components\SDM845\Platform\Subsys\TrEE
 \components\SDM845\Device\Generic\Cellular
 \components\SDM845\Device\Generic\HexagonLoader
-\components\SDM845\Device\Generic\Subsystems
+\components\SDM845\Device\Generic\Subsystems\RPC
+\components\SDM845\Device\Generic\Subsystems\Subsys_Extension
 \components\SDM845\Device\Generic\WLAN
 \components\SDM845\Device\Xiaomi\Cellular
 \components\SDM845\Device\Xiaomi\HexagonLoader
