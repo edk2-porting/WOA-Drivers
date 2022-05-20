@@ -22,3 +22,4 @@
 \components\SDM845\Platform\Archive\SMMU\10420
 \components\SDM845\Device\Xiaomi\GPU
 \components\AnySoC\FocalTechTouch
+\components\AnySoC\nt36xxx
