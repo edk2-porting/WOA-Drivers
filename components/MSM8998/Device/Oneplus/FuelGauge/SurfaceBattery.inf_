@@ -1,0 +1,74 @@
+ ;/*++
+;
+;Copyright (c) Microsoft Corporation All rights Reserved
+;
+;Module Name:
+;
+;    SurfaceBattery.inf
+;
+;Abstract:
+;
+;    INF file for installing Surface Battery Miniclass driver.
+;
+;--*/
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=Battery
+ClassGuid={72631e54-78a4-11d0-bcf7-00aa00b7b32a}
+Provider=%ProviderName%
+DriverVer = 06/03/2022,17.33.46.181
+CatalogFile=SurfaceBattery.cat
+PnpLockdown=1
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+[SourceDisksNames]
+1 = %DiskId1%,,,""
+
+[SourceDisksFiles]
+SurfaceBattery.sys  = 1,,
+
+;*****************************************
+; Surface Battery Mini Class Install Section
+;*****************************************
+
+[Manufacturer]
+%ProviderName%=Standard,NTARM64
+
+[Standard.NTARM64]
+%SurfaceBattery.DeviceDesc% = SurfaceBattery_Device, ACPI\BQB1380
+
+[SurfaceBattery_Device.NT]
+CopyFiles=SurfaceBattery_Device_Drivers
+Include=battery.inf
+Needs=Battery_Inst
+
+[SurfaceBattery_Device_Drivers]
+SurfaceBattery.sys
+
+;-------------- Service installation
+
+[SurfaceBattery_Device.NT.Services]
+AddService = SurfaceBattery,%SPSVCINST_ASSOCSERVICE%,SurfaceBattery_Service_Inst
+
+; -------------- SurfaceBattery driver install sections
+
+[SurfaceBattery_Service_Inst]
+DisplayName    = %SurfaceBattery.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\SurfaceBattery.sys
+
+;*****************************************
+; Literals
+;*****************************************
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ProviderName = "Surface"
+DiskId1 = "Surface Battery Mini Class Installation Disk"
+SurfaceBattery.DeviceDesc = "Oneplus5 Battery"
+SurfaceBattery.SVCDESC = "Surface Battery"
