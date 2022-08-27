@@ -5,7 +5,7 @@ on:
 jobs:
   build:
     name: Drivers Packager
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     strategy:
       matrix:
         device:
@@ -38,10 +38,18 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+      - name: Extract certificate
+        shell: pwsh
+        env:
+          CERTIFICATE: ${{ secrets.CERTIFICATE }}
+        run: Set-Content -Path ..\drivers.pfx -Value ([Convert]::FromBase64String($env:CERTIFICATE)) -AsByteStream
       - name: Package device ${{ matrix.device }}
-        run: ./extract.sh ${{ matrix.device }}
+        shell: pwsh
+        env:
+          PASSWORD: ${{ secrets.CERTIFICATE_PASSWORD }}
+        run: .\extract.ps1 -CodeName ${{ matrix.device }} -Certificate ..\drivers.pfx -Password $env:PASSWORD
       - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: ${{ matrix.device }}
           path: ./output/*
