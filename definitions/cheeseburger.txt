@@ -5,7 +5,7 @@
 \components\MSM8998\Platform\Subsys\Tftp
 \components\MSM8998\Platform\Subsys\TrEE
 \components\MSM8998\Device\Generic\HexagonLoader
-\components\AnySoC\SynapticsTouch-OP5
+\components\AnySoC\TouchScreen\SynapticsTouch-OP5
 \components\MSM8998\Platform\Bluetooth
 \components\MSM8998\Device\Oneplus\GPU
 \components\MSM8998\Device\Oneplus\FuelGauge

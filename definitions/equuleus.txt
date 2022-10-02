@@ -21,4 +21,4 @@
 \components\SDM845\Platform\Archive\IOMMU\10730
 \components\SDM845\Platform\Archive\SMMU\10420
 \components\SDM845\Device\Xiaomi\GPU
-\components\AnySoC\FingerTipS-Mi8
+\components\AnySoC\TouchScreen\FingerTipS-Mi8

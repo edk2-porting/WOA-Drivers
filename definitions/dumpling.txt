@@ -6,5 +6,5 @@
 \components\MSM8998\Platform\Subsys\TrEE
 \components\MSM8998\Device\Generic\HexagonLoader
 \components\MSM8998\Device\Oneplus\GPU
-\components\AnySoC\SynapticsTouch-OP5T
+\components\AnySoC\TouchScreen\SynapticsTouch-OP5T
 \components\MSM8998\Platform\Bluetooth

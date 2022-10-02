@@ -8,7 +8,7 @@
 \components\SDM845\Device\Oneplus\Cellular
 \components\SDM845\Device\Oneplus\SensorsConfig
 \components\SDM845\Device\Oneplus\Subsystems
-\components\AnySoC\SynapticsTouch-OP6
+\components\AnySoC\TouchScreen\SynapticsTouch-OP6
 \components\SDM845\Platform\FG
 \components\SDM845\Platform\Bluetooth
 \components\SDM845\Platform\Archive\IOMMU\10730
