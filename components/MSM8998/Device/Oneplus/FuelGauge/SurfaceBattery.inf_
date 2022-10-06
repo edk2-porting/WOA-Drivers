@@ -70,5 +70,5 @@ ServiceBinary  = %13%\SurfaceBattery.sys
 SPSVCINST_ASSOCSERVICE= 0x00000002
 ProviderName = "Surface"
 DiskId1 = "Surface Battery Mini Class Installation Disk"
-SurfaceBattery.DeviceDesc = "Oneplus5 Battery"
+SurfaceBattery.DeviceDesc = "Oneplus 5 Battery"
 SurfaceBattery.SVCDESC = "Surface Battery"
