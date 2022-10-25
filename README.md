@@ -94,4 +94,5 @@ For preserving charset encoding, please checkout with using:
 
 ```
 git clone -c core.autocrlf=false https://github.com/edk2-porting/WOA-Drivers
+git lfs pull
 ```
