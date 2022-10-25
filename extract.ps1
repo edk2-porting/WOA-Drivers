@@ -1,4 +1,4 @@
-﻿Param(
+Param(
 	[String]$CodeName="",
 	[String]$Folder=".\output",
 	[String]$Certificate="",
@@ -54,6 +54,11 @@ $ErrorActionPreference="Stop"
 		DialogCertificate="选择用于签名驱动的证书"
 		DialogCertificateFilter="PFX证书 (*.pfx)|*.pfx|全部文件 (*.*)|*.*"
 		ExtractFailed="驱动释放失败"
+		StartSumCheck="开始检查文件SHA256校验"
+		FileNotFound="文件{0}未找到"
+		SumFileFailed="{0} SHA256校验失败"
+		SumCheckResult="SHA256校验{0}成功，{1}失败"
+		SumCheckFailed="校验失败，文件损坏或者忘记运行'git lfs pull'?"
 	},[PSCustomObject]@{
 		Locale=""
 		OutExists="output folder {0} exists"
@@ -91,6 +96,11 @@ $ErrorActionPreference="Stop"
 		DialogCertificate="Select certificate to sign drivers"
 		DialogCertificateFilter="PFX Certificate (*.pfx)|*.pfx|All files (*.*)|*.*"
 		ExtractFailed="driver extract failed"
+		StartSumCheck="Start SHA256 sum of files"
+		FileNotFound="File {0} not found"
+		SumFileFailed="SHA256 sum of {0} failed"
+		SumCheckResult="SHA256 sum {0} success, {1} failed"
+		SumCheckFailed="Hash check failed, corrupted files or forgot to run 'git lfs pull'?"
 	}
 )
 Function InitializeI18N(){
@@ -162,6 +172,33 @@ Function CleanUP(
 		Return $False
 	}
 	Return $True
+}
+
+Function CheckSum(){
+	[Int]$Success=0
+	[Int]$Failed=0
+	PrintLog "INFO" $Global:I18NString.StartSumCheck
+	ForEach($Line in Get-Content -Path .\hash.txt){
+		$Value=($Line -Replace '  ',' ') -Split ' '
+		If(-not (Test-Path -Path $Value[1])){
+			PrintLog "ERROR" ($Global:I18NString.FileNotFound -f $Value[1])
+			$Failed++
+			Continue
+		}
+		$Hash=(Get-FileHash -Algorithm SHA256 -Path $Value[1]).Hash.ToLower()
+		If($Hash -ne $Value[0]){
+			PrintLog "ERROR" ($Global:I18NString.SumFileFailed -f $Value[1])
+			$Failed++
+			Continue
+		}
+		$Success++
+	}
+	PrintLog "INFO" ($Global:I18NString.SumCheckResult -f $Success,$Failed)
+	If($Failed -ne 0){
+		PrintLog "ERROR" $Global:I18NString.SumCheckFailed
+		Return $False
+	}
+	return $True
 }
 
 Function CopyDrivers(
@@ -270,6 +307,9 @@ Function ExtractDrivers(
 		-ChildPath (-Join ($CodeName,".txt"))
 	If(-not (Test-Path -Path $Config)){
 		PrintLog "ERROR" $Global:I18NString.DefNotFound
+		Return $False
+	}
+	If(-not (CheckSum)){
 		Return $False
 	}
 	Try{

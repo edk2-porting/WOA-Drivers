@@ -14,6 +14,12 @@ then
 	echo "ERROR: your model has no definition file, please check!" >&2
 	exit 1
 fi
+echo "checking hash..."
+if ! sha256sum --quiet --check hash.txt
+then
+	echo "Hash check failed, corrupted files or forgot to run 'git lfs pull'?"
+	exit 1
+fi
 rm -rf ./output
 echo "copying drivers..."
 while read -r line
