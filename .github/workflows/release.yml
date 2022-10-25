@@ -41,6 +41,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+        with:
+          lfs: true
       - name: Extract certificate
         shell: pwsh
         env:

@@ -1,2 +1,10 @@
 # Treat everything as binary, as cat files require binary identity for signatures to match
 * -text
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.sys filter=lfs diff=lfs merge=lfs -text
+*.mbn* filter=lfs diff=lfs merge=lfs -text
+*.tlv filter=lfs diff=lfs merge=lfs -text
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.elf filter=lfs diff=lfs merge=lfs -text
+*.so* filter=lfs diff=lfs merge=lfs -text
+*.pdb filter=lfs diff=lfs merge=lfs -text
