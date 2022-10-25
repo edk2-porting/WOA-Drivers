@@ -1,4 +1,4 @@
-Param(
+﻿Param(
 	[String]$CodeName="",
 	[String]$Folder=".\output",
 	[String]$Certificate="",
@@ -263,6 +263,22 @@ Function SignDrivers(
 			Return $False
 		}
 		$cmd=@()
+		$exe=(Resolve-Path -Path ".\tools\inf2cat.exe").Path
+		$cmd+="/os:10_VB_ARM64"
+		$drivers=Get-ChildItem `
+			-Recurse `
+			-Path $Destination `
+			-Filter '*.inf'
+		$i=0
+		ForEach($driver in $drivers){
+			$i++
+			$dir=Split-Path -Parent -Path $driver.FullName
+			PrintLog "INFO" $dir
+			$out=&$exe $cmd ("/driver:"+$dir) 2>&1
+			PrintLog "DEBUG" $out
+			PrintLog "INFO" ("{0}/{1}" -f $i,$drivers.Count)
+		}
+		$cmd=@()
 		$exe=(Resolve-Path -Path ".\tools\signtool.exe").Path
 		$cmd+="sign"
 		$cmd+="/fd";
@@ -276,7 +292,7 @@ Function SignDrivers(
 		$drivers=Get-ChildItem `
 			-Recurse `
 			-Path $Destination `
-			-Filter '*.sys'
+			-Include '*.sys','*.cat'
 		$i=0
 		ForEach($driver in $drivers){
 			$i++
