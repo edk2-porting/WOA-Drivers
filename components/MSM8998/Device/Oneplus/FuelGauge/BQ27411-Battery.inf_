@@ -4,7 +4,7 @@
 ;
 ;Module Name:
 ;
-;    SurfaceBattery.inf
+;    BQ27411-Battery.inf
 ;
 ;Abstract:
 ;
@@ -17,8 +17,8 @@ Signature="$WINDOWS NT$"
 Class=Battery
 ClassGuid={72631e54-78a4-11d0-bcf7-00aa00b7b32a}
 Provider=%ProviderName%
-DriverVer = 06/03/2022,17.33.46.181
-CatalogFile=SurfaceBattery.cat
+DriverVer = 01/10/2023,18.0.47.379
+CatalogFile=BQ27411-Battery.cat
 PnpLockdown=1
 
 [DestinationDirs]
@@ -28,7 +28,7 @@ DefaultDestDir = 13
 1 = %DiskId1%,,,""
 
 [SourceDisksFiles]
-SurfaceBattery.sys  = 1,,
+BQ27411-Battery.sys  = 1,,
 
 ;*****************************************
 ; Surface Battery Mini Class Install Section
@@ -38,6 +38,7 @@ SurfaceBattery.sys  = 1,,
 %ProviderName%=Standard,NTARM64
 
 [Standard.NTARM64]
+%SurfaceBattery.DeviceDesc% = SurfaceBattery_Device, ACPI\BQ027411
 %SurfaceBattery.DeviceDesc% = SurfaceBattery_Device, ACPI\BQB1380
 
 [SurfaceBattery_Device.NT]
@@ -46,7 +47,7 @@ Include=battery.inf
 Needs=Battery_Inst
 
 [SurfaceBattery_Device_Drivers]
-SurfaceBattery.sys
+BQ27411-Battery.sys
 
 ;-------------- Service installation
 
@@ -60,7 +61,7 @@ DisplayName    = %SurfaceBattery.SVCDESC%
 ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
 StartType      = 3               ; SERVICE_DEMAND_START
 ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
-ServiceBinary  = %13%\SurfaceBattery.sys
+ServiceBinary  = %13%\BQ27411-Battery.sys
 
 ;*****************************************
 ; Literals
@@ -68,7 +69,8 @@ ServiceBinary  = %13%\SurfaceBattery.sys
 
 [Strings]
 SPSVCINST_ASSOCSERVICE= 0x00000002
-ProviderName = "Surface"
-DiskId1 = "Surface Battery Mini Class Installation Disk"
-SurfaceBattery.DeviceDesc = "Oneplus 5 Battery"
-SurfaceBattery.SVCDESC = "Surface Battery"
+ProviderName = "BQ27411"
+DiskId1 = "BQ27411 Battery Mini Class Installation Disk"
+SurfaceBattery.DeviceDesc = "BQ27411 Battery"
+SurfaceBattery.SVCDESC = "BQ27411 Battery"
+
