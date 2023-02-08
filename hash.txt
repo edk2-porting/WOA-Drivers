@@ -33,6 +33,7 @@
 08423c1ee488176f64566989e4dddd157093b0294c16e0c906f1cbd23bacaa11  ./components/SDM845/Device/Oneplus/SensorsConfig/revision
 08c9ed76b05ff85fab3d025c437c5720d2d332d10141caf72f54268beee01538  ./components/SDM845/Device/Oneplus/SensorsConfig/sns_dpc.json
 08e4243b302f44c2aa8e4fec34a6a8a750e16423980420cc7a9b14c9faf61d2e  ./components/SDM845/Device/Generic/Subsystems/MCFG_Subsys_ext/MCFG/MCFG.49
+09113c362564b4458e446662a3ebe29b676b0a933361d5f7d7327f9b310088fd  ./components/SDM845/Device/Oneplus/Subsystems/SSDD/qcdsp2850.mbn.gz
 095aa76ea9d39658a27dfa9728d84744cfdf0df0bf90e87f3c1a93adc62e61fb  ./components/SDM845/Device/Xiaomi/Subsystems/MCFG_Subsys_ext/MCFG/mcfg_sw.mbn.36
 098f52ad35bb6ddc52add17ba46af447028244ff17e6da3df14283d418fdee4d  ./components/SDM845/Device/Generic/Subsystems/MCFG_Subsys_ext/MCFG/MCFG.45
 09c8ed16d69a7ab2cf564f5902a84ce88dc99e8f5d05cee597dfc42de51e4122  ./components/SDM845/Device/LG/GPU/qcvidencx86um850.DLL
@@ -402,6 +403,7 @@
 578e8ca052b6786cf0efc7eeafccd314684dbe05eb1319f13c8c8108b433cd5b  ./components/SDM845/Device/Xiaomi/Subsystems/MCFG_Subsys_ext/MCFG/mcfg_sw.mbn.30
 580a1c1fa753d50bb2a38003ca766766314de1a45f2eab71c6668d2e36223b6d  ./components/SDM845/Device/Generic/Subsystems/MCFG_Subsys_ext/MCFG/MCFG.118
 588f3d163f234522b20d3f0c166132d57a145b0d347083954a072293c5d0bfd5  ./components/SDM845/Device/Xiaomi/Subsystems/MCFG_Subsys_ext/MCFG/mcfg_sw.mbn.72
+58cf9f44e5a7982b5d005d643ae55f30ab4f8b757b9e1b96de4ce9efc8fda7a2  ./components/SDM845/Device/Smartisan/Subsystems/SSDD/qcdsp2850.mbn.gz
 58dce77f54ae48e1094edf600c2ffb7aac03a701d4584aa2f3fc622b33a00cbe  ./components/SDM845/Device/Generic/Subsystems/MCFG_Subsys_ext/MCFG/MCFG.3
 590cc0a573ee11727e096a6c2959f73e989a69166ee67d914abf5a79a9ad0b49  ./components/MSM8998/Device/Oneplus/GPU/qcdx8998.PNF
 591b992facbd4f9338381daf8c3bc52dd490d5ed611f73ab11e0b891cb765bc7  ./components/SDM845/Device/Generic/WLAN/bdwlan.b3f
@@ -629,6 +631,7 @@
 7e1fc6df0d792709231b448fb7c1b6b213de764e8c76b74a214c71b9a71e5975  ./components/SDM845/Device/Xiaomi/Subsystems/MCFG_Subsys_ext/MCFG/mcfg_sw.mbn.47
 7eaf8940afcdba586146e96887ccb2e7f56d496f886a0dc5482324d06ae79c40  ./components/SDM845/Device/Oneplus/SensorsConfig/sns_cm.json
 7ebf5d8bed1fd9b13e98261fd89d17b845e2b93f1283f500d750f2d088c2160e  ./components/SDM845/Device/Xiaomi/Subsystems/MCFG_Subsys_ext/MCFG/mcfg_sw.mbn.75
+7f8160bd255a31e197e65e7e8809b6574caa2c8376d9c68fb30db0ce56856e68  ./components/SDM845/Device/Nubia/Subsystems/SSDD/qcdsp2850.mbn.gz
 80108ba4cdb36241accce8d4e5a0a35b45efe9e7058b71090a52eb6a5e919969  ./components/SDM845/Device/Oneplus/Subsystems/MCFG_Subsys_ext/MCFG/mcfg_sw.mbn.379
 80108ba4cdb36241accce8d4e5a0a35b45efe9e7058b71090a52eb6a5e919969  ./components/SDM845/Device/Oneplus/Subsystems/MCFG_Subsys_ext/MCFG/mcfg_sw.sig.380
 80130a6c6546848307d225862fbf96d81b0b60cdcf0b62bae92850527b215039  ./components/SDM845/Device/Xiaomi/Cellular/IPA/ipa_fws.elf
@@ -700,6 +703,7 @@
 8c012da78eee194d0481eae25da27772007bf6573f4a7301613db76a11077807  ./components/SDM845/Device/Generic/Subsystems/Subsys_Extension/etsieaacplusencandcmnmodule.so.1
 8c012da78eee194d0481eae25da27772007bf6573f4a7301613db76a11077807  ./components/SDM845/Device/Oneplus/Subsystems/Subsys_Extension/etsieaacplusencandcmnmodule.so.1
 8ca5ebd8bb57f200dbce7c684b67d0a10fcd5ab622ffeba2ab2b357ebc12967d  ./components/SDM845/Platform/Subsys/Cellular/RmnetBridge/qcrmnetbridge850.sys
+8ce967f9c3191556909ed8b8e41a48f8b433df17ed13977d9fa115b84dfbf287  ./components/SDM845/Device/Meizu/Subsystems/SSDD/qcdsp2850.mbn.gz
 8cf7d90aab8a99d52cf8fad0484f47e2dd87f31cae5e0117ece3f11183c0760e  ./components/SDM845/Device/Xiaomi/Subsystems/MCFG_Subsys_ext/MCFG/mcfg_sw.mbn.14
 8d16cebb6e1740b837e1e2775087ad8b2a752efd1456d2cca27f229189b7c932  ./components/SDM845/Device/Generic/Subsystems/MCFG_Subsys_ext/MCFG/MCFG.35
 8d3c004bc89b86a928f31a8d9e93992d52a9715cf15915dff482d12f17f184cf  ./components/MSM8998/Device/Generic/HexagonLoader/qcpil8998.sys
@@ -813,6 +817,7 @@ a724031783141344ed62a9e59afaa0731db6a44b2e5916c068569ce8fa99855a  ./components/S
 a736e840e458dccb675bb2d66a48a8682d91f7cdfb113143eb5abfbbb924787b  ./components/SDM845/Platform/Subsys/SSVC/qcshutdownsvc850.cat
 a74268a09d0f8a2832fdab7fc6c1ac5d4aeaaa246382a6ff56593996b06de3f2  ./components/SDM845/Device/Generic/Subsystems/MCFG_Subsys_ext/MCFG/MCFG.48
 a7882df30372786395cc088da3295b5e9a2ae0be8bc111c80991131ef3a8516e  ./components/SDM845/Platform/minimal/HALs/halextqcwdogtimer.cat
+a79588f2173e549d3c6b80e95bf8746b48fec61452591a82d8f185fb529629fc  ./components/SDM845/Device/Xiaomi/Subsystems/SSDD/qcdsp2850.mbn.gz
 a7dfde16619bd1618dc674ee13f8a60cca36c81b2327c172a50355b3ed9ce6fb  ./components/SDM845/Device/Generic/Subsystems/MCFG_Subsys_ext/MCFG/MCFG.112
 a7e53c0ceb14b3304068859af5016a4cd999202ee581b1ea653604401e69a8bd  ./components/SDM845/Platform/Bluetooth/AddVSCRegistry/qcbtaddvscregistry850.cat
 a7eb27455e4afa4a8211b65224aa8bdc857bfffd38ad14ee29ae2c96b7c53c05  ./components/SDM845/Device/Generic/Subsystems/MCFG_Subsys_ext/MCFG/MCFG.26
