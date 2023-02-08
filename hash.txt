@@ -910,6 +910,7 @@ bddf320c7e2d7b0eb305aa86de605c0e8c23e8c573d1055abc85278afb31acb0  ./components/S
 bddf320c7e2d7b0eb305aa86de605c0e8c23e8c573d1055abc85278afb31acb0  ./components/SDM845/Device/Xiaomi/Subsystems/SSDD/qcsubsys850.cat
 bdf5da49993bc4d53eec3cfa38c761b390346ac32681b674339da0a3521ddbae  ./components/SDM845/Device/Oneplus/Subsystems/MCFG_Subsys_ext/MCFG/mcfg_sw.mbn.384
 bdf5da49993bc4d53eec3cfa38c761b390346ac32681b674339da0a3521ddbae  ./components/SDM845/Device/Oneplus/Subsystems/MCFG_Subsys_ext/MCFG/mcfg_sw.sig.385
+be127797bad9b0f63f5d11eab7e49c9b07ee290b4b2d69e2baedd3828cd8092d  ./components/MSM8998/Device/Oneplus/HexagonLoader/qcpil8998.sys.gz
 bf2cd515b1d6417a58263b0fcc84648648726fc188c615f6d65f66fd16d1ac02  ./components/SDM845/Device/Generic/Subsystems/MCFG_Subsys_ext/MCFG/MCFG.134
 bf4675351ac2116de8ace51a82c82d4a676bc1da27a43519a912d336741a6162  ./components/SDM845/Device/Xiaomi/Subsystems/MCFG_Subsys_ext/MCFG/mcfg_sw.mbn.66
 bf649ece27d9f277588067b4d6e22f43b7130537af1d80fe6cebec1c68c7753e  ./components/SDM845/Device/Xiaomi/Subsystems/MCFG_Subsys_ext/MCFG/mcfg_sw.mbn.46
@@ -999,6 +1000,7 @@ cec9c3027139c6150ebec491972c90880307adf38d4c29de87b694eaa09b34e3  ./components/M
 cf16280c143c8579b55f62a5396e035b8e9d199a661b8f19d0b3c962ed6ac030  ./components/SDM845/Device/Oneplus/SensorsConfig/ak991x_dri_0.json
 cf174360413a19355150b9edaa0fb084be60e743597b08baebdb83d7d0407561  ./components/SDM845/Device/Xiaomi/Subsystems/MCFG_Subsys_ext/MCFG/mcfg_sw.mbn.98
 cf40682a9c725bdce8440534b1e642602687a7f8c5a5e7ff49cae325da45c808  ./components/SDM845/Platform/Subsys/qSarMgr/qSarMgr.dll
+cf87e5466b2824004962bb968df58dd4483437e24292b93740d8ce0deeec41db  ./components/MSM8998/Device/Generic/HexagonLoader/qcpil8998.sys.gz
 cf9b129548bba509fcad7fd38983487f3e06633a22268ec336c1e8ba9d1bfd34  ./components/SDM845/Device/Generic/Subsystems/MCFG_Subsys_ext/MCFG/MCFG.33
 d036b6ad622c72c42a449eb5bc64977412629fe4b3e85daf097881fafad8d17e  ./components/SDM845/Device/Generic/Subsystems/MCFG_Subsys_ext/MCFG/MCFG.137
 d0532ca8d504f7bcbc47b393fda331547fc710e0995359abd24ae6d8de5a4038  ./components/SDM845/Device/Oneplus/SensorsConfig/qcSensorsConfigCls850.cat
