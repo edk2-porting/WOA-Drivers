@@ -14,6 +14,7 @@ then
 	echo "ERROR: your model has no definition file, please check!" >&2
 	exit 1
 fi
+find components -type f -name '*.gz' -exec gzip -vd {} \;
 echo "checking hash..."
 if ! sha256sum --quiet --check hash.txt
 then
@@ -32,4 +33,5 @@ echo "rename drivers..."
 find output -type f -name '*.inf_'|while read -r line
 do mv "${line}" "${line//.inf_/.inf}"
 done
+find output -type f -name '*.gz' -exec rm -fv {} \;
 echo "done"

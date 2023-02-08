@@ -150,6 +150,34 @@ Function PrintLog($Level="INFO",$Message){
 	}
 }
 
+Function GunZip([String]$FileIn,[String]$FileOut){
+	$In=[System.IO.FileStream]::New($FileIn,[IO.FileMode]::Open,[IO.FileAccess]::Read,[IO.FileShare]::Read)
+	$Out=[System.IO.FileStream]::New($FileOut,[IO.FileMode]::Create,[IO.FileAccess]::Write,[IO.FileShare]::None)
+	$Gzip=[System.IO.Compression.GzipStream]::New($In,[IO.Compression.CompressionMode]::Decompress)
+	$Buf=New-Object byte[](8192)
+	While($true){
+		$Read=$Gzip.Read($Buf,0,1024)
+		If($Read -le 0){
+			Break
+		}
+		$Out.Write($Buf,0,$Read)
+	}
+	$Gzip.Close()
+	$Out.Close()
+	$In.Close()
+}
+
+Function UnpackGZips(){
+	ForEach($File in Get-ChildItem -Recurse -Path components -Filter *.gz){
+		$Dest=($File.FullName -Replace '\.gz$','')
+		If(Test-Path -Path $Dest){
+			Continue
+		}
+		GunZip $File.FullName $Dest
+		PrintLog "INFO" ("unpack {0} to {1}" -f $File.FullName,$Dest)
+	}
+}
+
 Function CleanUP(
 	[String]$Destination,
 	[Boolean]$Force=$False
@@ -181,6 +209,9 @@ Function CheckSum(){
 	ForEach($Line in Get-Content -Path .\hash.txt){
 		$Value=($Line -Replace '  ',' ') -Split ' '
 		If(-not (Test-Path -Path $Value[1])){
+			If(Test-Path -Path ($Value[1] -Replace '\.gz$','')){
+				Continue
+			}
 			PrintLog "ERROR" ($Global:I18NString.FileNotFound -f $Value[1])
 			$Failed++
 			Continue
@@ -325,6 +356,7 @@ Function ExtractDrivers(
 		PrintLog "ERROR" $Global:I18NString.DefNotFound
 		Return $False
 	}
+	UnpackGZips
 	If(-not (CheckSum)){
 		Return $False
 	}
@@ -356,6 +388,7 @@ Function ExtractDrivers(
 		)){
 			Return $False
 		}
+		Get-ChildItem -Recurse -Path $Destination -Filter *.gz | Remove-Item -Force
 		If($Certificate -ne ""){
 			If(-not (SignDrivers `
 				-Certificate $Certificate `
